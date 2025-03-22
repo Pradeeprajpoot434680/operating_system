@@ -1,0 +1,8 @@
+#!/bin/bash
+add_numbers()
+{
+    read -p "Enter first number:" num1
+    read -p "Enter the second number:" num2
+    read -p "Enter the operator:" operator
+
+}
