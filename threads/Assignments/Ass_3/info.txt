@@ -1,0 +1,4 @@
+ls -aR | grep -B 3 "index.js" | awk 'NR % 5 == 1 || NR % 5 == 4'
+#it will search the file in the dirctories and subdirectories
+ls -aR 
+#tells about all the files and directories

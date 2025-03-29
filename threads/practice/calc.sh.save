@@ -1,0 +1,44 @@
+#!/bin/bash
+add_number()
+{
+  read -p "Enter the first number:" num1
+  read -p "Enter the second number:" num2
+  echo "$num1 + $num2" | bc
+}
+sub_number()
+{
+  read -p "Enter the first number:" num1
+  read -p "Enter the second number:" num2
+  echo "$num1 - $num2" | bc
+}
+multi_number()
+{
+  read -p "Enter the first number:" num1
+  read -p "Enter the second number:" num2
+  echo "$num1 * $num2" | bc
+}
+divide_number()
+{
+  read -p "Enter the first number:" num1
+  read -p "Enter the second number:" num2
+  echo "scale=3; $num1 / $num2" | bc
+}
+trigno_number()
+{
+  read -p "Enter the trigonometric function(s,c,a):" fun
+  read -p "Enter the angle in radian:" num
+  echo "$fun($num)" | bc
+}
+
+logri_number()
+{
+  read -p "Enter the argument of the log:" num
+  echo "l($num)" | bc
+}
+
+expo_number()
+{
+  read -p "Enter the power:" pow
+  echo "$base($num)" | bc
+}
+
